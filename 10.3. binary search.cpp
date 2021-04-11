@@ -15,6 +15,11 @@ void sort(int a[10],int size)
 			}
 		}
 	}
+	printf("\n The elements after sort are:\n");
+	for(i=0;i<size;i++)
+	{
+		printf("%d\t",a[i]);
+	}
 }
 
 int main()
@@ -29,11 +34,7 @@ int main()
 		scanf("%d",&a[i]);
 	}
 	sort(a,size);
-	printf("\n The elements after sort are:\n");
-	for(i=0;i<size;i++)
-	{
-		printf("%d\t",a[i]);
-	}
+	
 	printf("\n Enter the value which we need to search:");
 	scanf("%d",&value);
 	
